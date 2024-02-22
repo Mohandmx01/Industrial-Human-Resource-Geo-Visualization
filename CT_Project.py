@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from PIL import Image
+import plotly.express as px
 import folium
 import numpy as np
 from folium.plugins import MarkerCluster
@@ -15,7 +16,7 @@ import matplotlib.pyplot as plt
 
 icon = Image.open("C:/Users/Mohan.S/Desktop/Mohan_Project/CT_TEST/download.png")
 st.set_page_config(page_title= "HRM", page_icon= icon, layout= "wide", initial_sidebar_state= "expanded",
-                   menu_items={'About': """# This Flat Resale page is created by *Prabakaran!"""})
+                   menu_items={'About': """# This Flat Resale page is created by *Mohansrinivasan!"""})
 st.markdown("<h1 style='text-align: center; color: black;'>Industrial Human Resource Geo-Visualization</h1>", unsafe_allow_html=True)
 
 
@@ -115,7 +116,6 @@ st.pyplot(fig)
 
 
 
-import plotly.express as px
 
 main_cols = ['MainWorkersTotalPersons', 'MainWorkersTotalMales', 'MainWorkersTotalFemales']
 rural_cols = ['MainWorkersRuralPersons', 'MainWorkersRuralMales', 'MainWorkersRuralFemales']
